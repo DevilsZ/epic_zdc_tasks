@@ -1,0 +1,28 @@
+Lambda reconstruct process
+
+             ┌── InputManager.cc
+             │
+             ├── EventReader.cc
+             │
+             ├── PCAtrack.cc
+             │
+             ├── ImagingTopoCluster.cc
+             │
+             └── calculate_CM.cc
+                     │
+                     ↓
+             Lambda_reconstruction.C
+
+Explain in more detail
+
+1. Store information of the true particles
+2. Rotate hit positions along the Z-axis and store the rotated hit information
+3. Perform clustering
+4. Identify the neutron cluster in the HCal and the two photon clusters in the W-Si
+5. Calculate the center of mass for each layer and store the reverse-rotated CM positions
+6. Calculate the Z-vertex point using the rotated cluster centers
+7. Fit tracks using PCA with the reverse-rotated Z-vertex point
+8. Reconstruct the Lambda
+
+** Rotate → Rotate the Y-axis by +0.025 rad
+** Reverse-rotate → Rotate the Y-axis by -0.025 rad
