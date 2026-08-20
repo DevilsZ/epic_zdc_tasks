@@ -40,11 +40,13 @@
 
 Algorithm combines topological clustering with image segmentation techniques
 
-<img width="1291" height="515" alt="image" src="https://github.com/user-attachments/assets/6a009e69-9aa0-457b-a799-12dab1728cb4" />
+<img width="1262" height="480" alt="image" src="https://github.com/user-attachments/assets/2bed91dd-8126-4ac3-bcb4-aba35c5f11ea" />
 
 # Tracking - Principal Component Analysis
 
 PCA estimates the cluster direction from the covariance matrix of the cluster hits
+
+<img width="756" height="383" alt="image" src="https://github.com/user-attachments/assets/b2ab5419-5c25-467b-b32e-2ef68c4afe14" />
 
 **To improve the reconstruction accuracy**
 - The hit energy is used as a weight
